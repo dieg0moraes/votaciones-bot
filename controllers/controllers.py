@@ -1,12 +1,13 @@
 from bot import bot
 from cogs import cogs
+from settings import API_KEY
 
 class Controller():
 
     def __init__(self):
         self.bot = bot.VotacionesBot()
         self.init_cogs()
-        self.bot.run('ODU4ODM1MDcxNzMyNjc4Njc3.YNj6fQ.9xuN9DnCTXUJ2UaMdXZoSjkvf8Y')
+        self.bot.run(API_KEY)
 
 
     def init_cogs(self):
